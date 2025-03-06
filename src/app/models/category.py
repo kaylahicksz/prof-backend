@@ -22,3 +22,4 @@ class Category(Base):
     created_at = Column(DateTime, default=datetime.now(UTC))
 
     user = relationship("User", back_populates="categories")
+    transactions = relationship("Transaction", back_populates="category")
