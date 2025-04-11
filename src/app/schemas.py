@@ -44,7 +44,7 @@ class HabitBase(BaseModel):
     day: int = datetime.now().day      
     year: int = datetime.now().year    
     name: str
-    duration: timedelta = 0                  
+    duration:  timedelta = timedelta(second=0)              
     quantity: int = 0                  
     category: str
     description: str = None            
